@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('styles/main.css');
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* MAIN STRUCTURE */
+body {
+	background: #2c3338;
+	color: #606468;
+  	font: 87.5%/1.5em 'Open Sans', Arial, sans-serif;
+  	margin: 0;
+  	margin: auto;
+}
+
+a {
+	color: #606468;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #eee;
+}
+
+/* BEGINNING LOGIN FORM */
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+p.title {
+	font-size: 30px;
+}
+
+p.about {
+	font-size: 15px;
+}
+
+.clearfix { 
+	*zoom: 1; 
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after { 
+	clear: both; 
+}
+
+/* LOGIN FORM */
+
+form span {
+	background-color: #363b41;
+	border-radius: 3px 0px 0px 3px;
+	color: #606468;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+form input {
+	height: 50px;
+}
+
+form input[type="text"] {
+	background-color: #3b4148;
+	border-radius: 0px 3px 3px 0px;
+	color: #606468;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 367px;
+
+}
+
+form input[type="submit"] {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #ea4c88;
+	color: #eee;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	width: 400px;
+	cursor: hand;
+
+}
+
+form input[type="submit"]:hover {
+	background-color: #d44179;
+}
+
+#feedback > p {
+	text-align: center;
+}
+
+#feedback > p span {
+	padding-left: 5px;
+}
+
+
+
