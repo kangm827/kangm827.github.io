@@ -1,0 +1,145 @@
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('styles/main.css');
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* MAIN STRUCTURE */
+body {
+	background: #2c3338;
+	color: #606468;
+  	font: 87.5%/1.5em 'Open Sans', Arial, sans-serif;
+  	margin: 0;
+}
+
+a {
+	color: #606468;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #eee;
+}
+
+/* BEGINNING LOGIN FORM */
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+p.title {
+	font-size: 30px;
+}
+
+p.about {
+	font-size: 15px;
+}
+
+.clearfix { 
+	*zoom: 1; 
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after { 
+	clear: both; 
+}
+
+/* RESPONSIVE */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { 
+  margin: 0; 
+}
+
+.columnsContainer { 
+  position: relative; 
+  margin: 8px;
+}
+
+.rightColumn, .leftColumn{  
+  padding: 5px; 
+}
+
+.leftColumn { 
+  margin-bottom: 8px; 
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 760px ) {
+  .leftColumn { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 300px; 
+  }
+
+	.rightColumn { 
+    margin-left: 300px;
+  }   
+}
+
+/* MAP BOX */
+#mapcanvas {
+	width: 99%;
+	height: 540px;
+}
+
+/* SEARCH */
+#search input {
+	float: left;
+}
+
+#search input[type="search"],
+#search input[type="submit"] {
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+#search input[type="search"] {
+	background-color: #3b4148;
+	color: #606468;
+	min-width: 240px;
+	padding: 6px 5px;
+}
+
+#search input[type="submit"] {
+	background: #ea4c88;
+	color: #eee;
+	font-weight: bold;
+	margin-left: 7px;
+	padding: 6px 10px;
+}
+
+#search input[type="submit"]:hover {
+	background: #d44179;
+}
+
+#search input[type="search"]::-webkit-input-placeholder { 
+	color: #42454e; 
+}
+
+#search input[type="search"]:-moz-placeholder { 
+	color: #42454e; 
+}
+#search input[type="search"]:-ms-input-placeholder { 
+	color: #42454e; 
+}
