@@ -12,16 +12,13 @@ if ($conn->connect_error) {
 } 
 
 
-$value1 = $_POST['first_name'];
-$value2 = $_POST['last_name'];
-$value3 = $_POST['username'];
-$value4 = $_POST['email'];
-$value5 = $_POST['message'];
+$value1 = $_POST['user_name'];
 
-$sql = "INSERT INTO feedback VALUES (DEFAULT, '$value1', '$value2', '$value3', '$value4', '$value5')";
+$sql = "INSERT INTO login VALUES (DEFAULT, '$value1')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    //echo "when you submit this should REDIRECT";
+    header ("location: search.html");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
