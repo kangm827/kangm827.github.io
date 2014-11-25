@@ -1,0 +1,173 @@
+ 
+/* CSS Document */
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+	background-image: url(img/geo.jpg);
+	color: #606468;
+  	font: 87.5%/1.5em 'Open Sans', Arial, sans-serif;
+  	margin: 0;
+ }
+ 
+form, span {
+	margin:0;
+	padding:0; 
+}
+
+p {
+	line-height: 1.5em;
+	color: #fff;
+}
+ 
+input { 
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+ 
+a {
+	color: #606468;
+	text-decoration: none;
+}
+
+a:hover { 
+	text-decoration: none;
+	color: #eee;
+}
+
+h1 {
+	color: #ea4c88;
+	text-shadow: 1px 1px #fff;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+ 
+#loginform { 
+	margin: 150px auto;
+	padding-top:18px; 
+	width: 300px;
+}
+
+#loginform form span {
+	background-color: #363b41;
+	border-radius: 3px 0px 0px 3px;
+	color: #606468;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#loginform form input {
+	height: 50px;
+}
+
+#loginform form input[type="text"] {
+	background-color: #3b4148;
+	border-radius: 0px 3px 3px 0px;
+	color: #606468;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 197px;
+}
+
+#loginform form input {
+	height: 50px;
+}
+ 
+#loginform p { 
+	margin: 5px; 
+}
+
+#loginform form input[type="submit"]:hover {
+	background-color: #d44179;
+}
+
+#loginform form input[type="submit"] {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #ea4c88;
+	color: #eee;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	width: 280px;
+	cursor: hand;
+}
+ 
+.error { 
+	color: #ff0000; 
+}
+
+#wrapper{
+	float: left;
+	width: 450px;
+	margin: auto;
+	padding-bottom:25px;
+}
+
+#chatbox {
+	text-align:left;
+	margin: auto;
+	margin-bottom: 5px;
+	padding:10px;
+	background-color: #3b4148;
+	height:270px;
+	width:400px;
+	border:1px solid #fff;
+	overflow:auto; 
+}
+ 
+#usermsg {
+	margin-left: 14px;
+	width:420px;
+	border:1px solid #fff; 
+}
+
+#submitmsg {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #ea4c88;
+	color: #eee;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 423px;
+	cursor: hand;
+	margin-left: 14px;
+}
+#submitmsg form input[type="submit"]:hover {
+	background-color: #d44179;
+}
+ 
+#menu { 
+	padding:12.5px 25px 12.5px 25px; 
+}
+ 
+.welcome { 
+	float:left;
+	color: #ea4c88;
+}
+
+.logout { 
+	float:right; 
+}
+ 
+.msgln { 
+	margin:0 0 2px 0; 
+	color: #fff;
+}
+ 
+ 
