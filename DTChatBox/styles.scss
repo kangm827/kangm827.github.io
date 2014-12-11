@@ -1,0 +1,203 @@
+//colors
+$color_melanzane_approx: #36002b;
+$white: #fff;
+$color_storm_dust_approx: #606468;
+$color_pizazz_approx: #f39406;
+$color_gallery_approx: #eee;
+$color_bright_turquoise_approx: #00ffcb;
+$color_tuna_approx: #363b41;
+$color_rose_approx: #ff0079;
+$color_cape_cod_approx: #3b4148;
+$black_20: rgba(0, 0, 0, 0.2);
+
+//fonts
+$font_0: FontAwesome;
+$font_1: sans-serif;
+$font_2: Open Sans;
+$font_3: Arial;
+
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+body {
+	background-image: url(img/Background.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: -140px bottom;
+	background-color: $color_melanzane_approx;
+	font: 87.5%/1.5em $font_2, $font_3, $font_1;
+	margin: 0;
+	padding: 25px;
+	padding-bottom: 25px;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+span {
+	margin: 0;
+	padding: 0;
+}
+p {
+	line-height: 1.5em;
+	color: $white;
+}
+input {
+	border: none;
+	font-family: $font_2, $font_3, $font_1;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+}
+a {
+	color: $color_storm_dust_approx;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+		color: $color_gallery_approx;
+	}
+}
+#DT {
+	color: $color_pizazz_approx;
+	text-shadow: 2px 2px $white;
+	text-align: center;
+	font-size: 55px;
+	margin-top: 40px;
+	margin-bottom: 65px;
+	font-weight: bold;
+}
+#container {
+	text-align: center;
+	width: auto;
+	margin: 0 auto;
+}
+nav {
+	height: 96px;
+	margin: 0 auto;
+}
+#teams {
+	height: 400px;
+	margin-top: 20px;
+}
+h1 {
+	color: $color_bright_turquoise_approx;
+	text-shadow: 2px 2px $white;
+	text-align: center;
+	font-size: 45px;
+	margin-bottom: 5px;
+}
+h2 {
+	color: $color_pizazz_approx;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#loginform {
+	margin: 150px auto;
+	padding-top: 18px;
+	width: 300px;
+	form {
+		span {
+			background-color: $color_tuna_approx;
+			border-radius: 3px 0 0 3px;
+			color: $color_storm_dust_approx;
+			display: block;
+			float: left;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			width: 50px;
+		}
+		input {
+			height: 100px;
+			height: 50px;
+		}
+		input[type="text"] {
+			background-color: $white;
+			border-radius: 0 3px 3px 0;
+			color: $color_storm_dust_approx;
+			margin-bottom: 1em;
+			padding: 0 10px;
+		}
+		input[type="submit"] {
+			border-radius: 3px;
+			background-color: $color_rose_approx;
+			color: $color_gallery_approx;
+			font-weight: bold;
+			text-transform: uppercase;
+			width: 285px;
+			cursor: hand;
+		}
+	}
+	p {
+		margin: 5px;
+	}
+}
+#wrapper {
+	margin: 0 auto;
+	width: 450px;
+	height: auto;
+	padding-bottom: 25px;
+}
+#chatbox {
+	border-radius: 3px;
+	text-align: left;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: $color_cape_cod_approx;
+	height: 270px;
+	width: 400px;
+	border: 1px solid $white;
+	overflow: auto;
+}
+#usermsg {
+	margin-left: 14px;
+	margin-bottom: 10px;
+	width: 420px;
+	height: 55px;
+	border: 1px solid $white;
+	font-size: 10pt;
+}
+#submitmsg {
+	border-radius: 3px;
+	background-color: $color_rose_approx;
+	color: $color_gallery_approx;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 423px;
+	cursor: hand;
+	margin-left: 14px;
+	padding: 5px;
+	form input[type="submit"]:hover {
+		background-color: $color_bright_turquoise_approx;
+		cursor: hand;
+	}
+}
+#menu {
+	padding: 12.5px 25px 12.5px 25px;
+}
+.welcome {
+	float: left;
+	color: $color_pizazz_approx;
+}
+.logout {
+	float: right;
+	color: $white;
+	background-color: $black_20;
+	border-radius: 5px;
+	padding: 5px;
+}
+.msgln {
+	margin: 0 0 2px 0;
+	color: $white;
+}
+#panel {
+	font-size: 14px;
+	margin-top: 5px;
+	padding: 10px;
+	text-align: center;
+	color: $white;
+	border-radius: 5px;
+}
+[class*="fontawesome-"]:before {
+	font-family: $font_0, $font_1;
+}
